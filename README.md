@@ -9,7 +9,7 @@ Please see the [agenda](https://docs.google.com/spreadsheets/d/17lOj8Kk-ySFfTkOc
 # System access for hands-on development
 
 We will be using systems in the [Joint Laboratory for System Evaluation
-(JLSE)](https://jlse.anl.gov) at ANL for all boot camp experiments.
+(JLSE)](http://jlse.anl.gov) at ANL for all boot camp experiments.
 
 TODO: explain what the systems are like
 
