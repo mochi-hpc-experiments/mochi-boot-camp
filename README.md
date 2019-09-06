@@ -20,10 +20,10 @@ out in advance)
 
 # Session materials
 
-* [Session 1: Margo and Thallium](s1-margo-thallium/README.md)
-* [Session 2: Hands-on](s2-hands-on/README.md)
-* [Session 3: SSG](s3-ssg/README.md)
-* [Session 4: Components](s4-componets/README.md)
-* [Session 5: Example Composed Services](s5-composed/README.md)
-* [Session 6: Miscellaneous](s6-misc/README.md)
+* [Session 1: Margo and Thallium](sessions/s1-margo-thallium/README.md)
+* [Session 2: Hands-on](sessions/s2-hands-on/README.md)
+* [Session 3: SSG](sessions/s3-ssg/README.md)
+* [Session 4: Components](sessions/s4-componets/README.md)
+* [Session 5: Example Composed Services](sessions/s5-composed/README.md)
+* [Session 6: Miscellaneous](sessions/s6-misc/README.md)
 
