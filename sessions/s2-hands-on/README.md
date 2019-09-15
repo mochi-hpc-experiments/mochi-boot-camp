@@ -73,9 +73,7 @@ default:
 You can see in this case that it only found `gcc 4.8.5`, which will work,
 but is quite old.  There are newer compilers available in the JLSE
 environment that you can use in slack by putting them in your path and
-re-running spack compiler find (you will not need to modify your path when
-you log in in the future; spack will store the location of the compiler in
-it's persistent configuration):
+re-running spack compiler find:
 
 ```
 [carns@jlselogin2 bootcamp]$ export PATH="/soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/bin/:$PATH"
@@ -141,6 +139,19 @@ The following are the most important commands to know:
 * `spack load -r <package>` to load the package into your environment
 * `module list` to observe what modules you have loaded
 
+## Setting up your profile to retain Spack and compiler settings
+
+There are two critical commands that you will want to either run every time
+you log into a JLSE node, or else add to your ~/.bashrc file so that they
+are performed automatically.  We recommend the latter to save time:
+
+```
+cat ~/bootcamp/mochi-boot-camp/sessions/s2-hands-on/bashrc.mochi.jlse >> ~/.bashrc
+```
+
+Now when you log into JLSE moving forward you will have the correct compiler
+and Spack command line tools available in your environment.
+
 ## Installing your first Mochi components
 
 Run the following to download, compile, and install Margo:
@@ -150,18 +161,70 @@ spack install margo
 ```
 
 This will take a few minutes and will install all of the necessary
-dependencies, including Mercury and Argobots.
+dependencies, including Mercury and Argobots.  You can now load these
+packages by running:
 
-## Running a hands on example
+```
+spack load -r margo
+```
 
+... and inspect to confirm that they are present in your environment with:
 
+```
+module list
+```
+
+## Compiling an example Mochi code
+
+```
+cd ~/bootcamp/mochi-boot-camp/sessions/s2-hands-on/hello-world
+make
+```
+
+The above example will compile a simple client and server program, linked
+against margo.  If you inspect the Makfile you will see pkg-config commands
+that are used to find the correct CFLAGS and LDFLAGS for the build.
+
+## running an interactive job on the JLSE compute nodes
+
+The following command will allocate a single JLSE node for your use for 8
+hours and open up an interactive terminal on that node.
+
+```
+qsub qsub -I -n 1 -t 480 -q it
+```
+
+Once the terminal is open, you can open additional terminals to that node
+with ssh.  For example:
+
+```
+ssh it03
+```
+
+Note that you only have ssh access to nodes that you currently have
+allocated, and your allocation will end once time expires or you log out of
+the original interactive terminal that was created with the qsub command.
+
+## Running an example Mochi code
+
+```
+cd /home/carns/bootcamp/mochi-boot-camp/sessions/s2-hands-on/hello-world
+
+# in one terminal:
+./server
+Server running at address na+sm://156045/0
+
+# in the other terminal, run client with argument matching the address
+#    shown above
+./client na+sm://156045/0
+```
 
 ## TODO NOTES (TEMPORARY)
 
-TODO: Phil handle JLSE setup/documentation
-
-TODO: make content here first with step by step, details, packages.yaml,
-  etc.
+TODO: is this too long (especially with all of the Spack stuff?)  Could make
+  it shorter by bundling some of this into scripts, but then attendees won't
+  see the inner workings of the environment.  Not sure about the tradeoff
+  here.
 
 TODO: then make 5 minute presentation that summarizes and kicks off the
   session so people have the big picture of what they are setting up
@@ -169,10 +232,6 @@ TODO: then make 5 minute presentation that summarizes and kicks off the
 TODO: have a few slides (not detailed) how to adapt this stuff for your home
   system.  Ask people not to start there, do JLSE first.  Exercise for the
   reader to get their laptop or home cluster set up.
-
-TODO: initial example is a "hello world" rpc, something attendees can run
-  without having to write code.  Bare minimum expectation to have executed
-  this by end of session.
 
 TODO: second example will be an exercise: copy the rpc, rename it, and
   modify it to do something else (increment an integer, for example)
