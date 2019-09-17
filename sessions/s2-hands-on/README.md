@@ -221,17 +221,5 @@ Server running at address na+sm://156045/0
 
 ## TODO NOTES (TEMPORARY)
 
-TODO: is this too long (especially with all of the Spack stuff?)  Could make
-  it shorter by bundling some of this into scripts, but then attendees won't
-  see the inner workings of the environment.  Not sure about the tradeoff
-  here.
-
-TODO: then make 5 minute presentation that summarizes and kicks off the
-  session so people have the big picture of what they are setting up
-
-TODO: have a few slides (not detailed) how to adapt this stuff for your home
-  system.  Ask people not to start there, do JLSE first.  Exercise for the
-  reader to get their laptop or home cluster set up.
-
 TODO: second example will be an exercise: copy the rpc, rename it, and
   modify it to do something else (increment an integer, for example)
