@@ -9,9 +9,9 @@ Please see the [agenda](https://docs.google.com/spreadsheets/d/17lOj8Kk-ySFfTkOc
 # System access for hands-on development
 
 We will be using systems in the [Joint Laboratory for System Evaluation
-(JLSE)](http://jlse.anl.gov) at ANL for all boot camp experiments.  See the
-[System access instructions](SYSTEM.md) for information about how to use the
-nodes.  There will be time in Session 2 on Tuesday to set things up.
+(JLSE)](http://jlse.anl.gov) at ANL for all boot camp experiments. You can
+find documentation for logging into the JLSE environment and running code
+there as part of [Session 2: Hands-on](sessions/s2-hands-on/README.md).
 
 # Session materials
 
