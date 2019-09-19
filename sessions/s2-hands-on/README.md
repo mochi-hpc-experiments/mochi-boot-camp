@@ -177,11 +177,17 @@ module list
 ## Compiling an example Mochi code
 
 ```
-cd ~/bootcamp/mochi-boot-camp/sessions/s2-hands-on/hello-world
+cd ~/bootcamp/mochi-boot-camp/sessions/s2-hands-on/sum
 make
 ```
 
-The above example will compile a simple client and server program, linked
+The above example is a very slightly modified (to use shared memory instead
+of TCP for communication) copy of the [Sending arguments, returning
+values](https://mochi.readthedocs.io/en/latest/margo/03_sum.html#) example
+from the [Mochi Readthedocs
+page](https://mochi.readthedocs.io/en/latest/index.html).
+
+This will compile a simple client and server program, linked
 against margo.  If you inspect the Makfile you will see pkg-config commands
 that are used to find the correct CFLAGS and LDFLAGS for the build.
 
@@ -208,7 +214,7 @@ the original interactive terminal that was created with the qsub command.
 ## Running an example Mochi code
 
 ```
-cd /home/carns/bootcamp/mochi-boot-camp/sessions/s2-hands-on/hello-world
+cd /home/carns/bootcamp/mochi-boot-camp/sessions/s2-hands-on/sum
 
 # in one terminal:
 ./server
