@@ -37,5 +37,36 @@ which the server was executing for log files.
 
 ## pmdk
 
-## bake
+In order to execute this example, you must first install the `pmdk`
+package from spack:
+
+```
+spack install pmdk
+```
+
+Now go into the pmdk example directory, compile, and run the example. 
+
+```
+cd ~/bootcamp/mochi-boot-camp/sessions/s4-components/pmdk
+make
+```
+
+```
+cd ~/bootcamp/mochi-boot-camp/sessions/s4-components/pmdk
+
+# create an empty ramdisk file to emulate an NVRAM device
+truncate -s 100M /dev/shm/foo.dat
+
+# format it for libpmemobj use
+pmempool create obj /dev/shm/foo.dat
+
+# run the example program
+./pmemobj-example /dev/shm/foo.dat
+
+```
+### Exercise
+
+## Bake
+
+### Exercise
 
