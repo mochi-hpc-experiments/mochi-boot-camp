@@ -19,7 +19,7 @@ make
 ```
 
 ```
-cd /home/carns/bootcamp/mochi-boot-camp/sessions/s4-components/abt-io
+cd ~/bootcamp/mochi-boot-camp/sessions/s4-components/abt-io
 
 # in one terminal:
 ./server
@@ -44,7 +44,7 @@ package from spack:
 spack install pmdk
 ```
 
-Now go into the pmdk example directory, compile, and run the example. 
+Now go into the pmdk example directory, compile, and run the example.
 
 ```
 cd ~/bootcamp/mochi-boot-camp/sessions/s4-components/pmdk
@@ -67,6 +67,46 @@ pmempool create obj /dev/shm/foo.dat
 ### Exercise
 
 ## Bake
+
+In order to execute this example, you must first install the `bake`
+package from spack:
+
+```
+spack install bake
+```
+
+There is no example to compile here; the initial Bake hands-on example uses
+the demo Bake daemon and client programs installed with the bake package.
+
+
+```
+cd ~/bootcamp/mochi-boot-camp/sessions/s4-components/bake
+
+# create a ramdisk file to use as the backend storage target for the Bake
+#   server.  This tool creates a libpmemobj formated pmdk file, and then
+#   adds additional metadata needed by Bake.
+
+bake-mkpool -s 100M /dev/shm/bake.dat
+
+# in one terminal, run the example Bake server daemon.  The arguments
+#   tell the Bake daemon to use shared memory for communication, to store
+#   data in the just-created target file, and store the network address of
+#   the server in addr.dat.
+
+bake-server-daemon na+sm:// /dev/shm/bake.dat -f addr.dat
+
+# in another terminal, run a command line tool to copy an example file to
+#    Bake.  The arguments specify the network address and target ID.
+#    NOTE: the output of this command will display the name of a temporary
+#    file that contains the Bake region id.
+
+bake-copy-to example.dat `cat addr.dat` 1 1
+
+# confirm that the data is present in the backend memory file
+
+strings /dev/shm/bake.dat
+
+```
 
 ### Exercise
 
