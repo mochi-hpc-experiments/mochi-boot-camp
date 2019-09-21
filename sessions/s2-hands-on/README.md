@@ -73,7 +73,7 @@ default:
 You can see in this case that it only found `gcc 4.8.5`, which will work,
 but is quite old.  There are newer compilers available in the JLSE
 environment that you can use in slack by putting them in your path and
-re-running spack compiler find:
+re-running `spack compiler find`:
 
 ```
 [carns@jlselogin2 bootcamp]$ export PATH="/soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/bin/:$PATH"
