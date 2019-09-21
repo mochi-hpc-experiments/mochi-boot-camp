@@ -1,19 +1,19 @@
 CFLAGS += `pkg-config --cflags margo ssg`
 LDFLAGS += `pkg-config --libs margo ssg`
 
-all:: ssg-token-ring-solved ssg-token-ring-stub
+all:: ssg-token-ring2 ssg-token-ring1
 
-ssg-token-ring-solved.o: ssg-token-ring-solved.c
-	mpicc $(CFLAGS) -c ssg-token-ring-solved.c
+ssg-token-ring2.o: ssg-token-ring2.c
+	mpicc $(CFLAGS) -c ssg-token-ring2.c
 
-ssg-token-ring-solved: ssg-token-ring-solved.o
-	mpicc ssg-token-ring-solved.o -o ssg-token-ring-solved $(LDFLAGS)
+ssg-token-ring2: ssg-token-ring2.o
+	mpicc ssg-token-ring2.o -o ssg-token-ring2 $(LDFLAGS)
 
-ssg-token-ring-stub.o: ssg-token-ring-stub.c
-	mpicc $(CFLAGS) -c ssg-token-ring-stub.c
+ssg-token-ring1.o: ssg-token-ring1.c
+	mpicc $(CFLAGS) -c ssg-token-ring1.c
 
-ssg-token-ring-stub: ssg-token-ring-stub.o
-	mpicc ssg-token-ring-stub.o -o ssg-token-ring-stub $(LDFLAGS)
+ssg-token-ring1: ssg-token-ring1.o
+	mpicc ssg-token-ring1.o -o ssg-token-ring1 $(LDFLAGS)
 
 clean::
-	rm -f ssg-token-ring-solved ssg-token-ring-stub ssg-token-ring-solved.o ssg-token-ring-stub.o
+	rm -f ssg-token-ring2 ssg-token-ring1 ssg-token-ring2.o ssg-token-ring1.o

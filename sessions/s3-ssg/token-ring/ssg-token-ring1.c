@@ -120,6 +120,8 @@ static void token_forward_recv(hg_handle_t h)
     if (serv_data->self_rank > 0)
         token_forward(serv_data);
 
+    printf("Member %d shutting down\n", serv_data->self_rank);
+
     /* XXX rather than shutting down immediately, send RPCs back through
      * the ring to shutdown in reverse order (i.e., 3, 2, 1, 0) */
     ssg_group_destroy(serv_data->gid);
