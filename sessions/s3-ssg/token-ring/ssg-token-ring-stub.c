@@ -120,7 +120,11 @@ static void token_forward_recv(hg_handle_t h)
     if (serv_data->self_rank > 0)
         token_forward(serv_data);
 
-    /* XXX initiate shutdown procedure on rank 0 once token has traversed ring */
+    /* XXX rather than shutting down immediately, send RPCs back through
+     * the ring to shutdown in reverse order (i.e., 3, 2, 1, 0) */
+    ssg_group_destroy(serv_data->gid);
+    ssg_finalize();
+    margo_finalize(serv_data->mid);
 
     return;
 }
