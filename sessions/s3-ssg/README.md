@@ -37,8 +37,8 @@ module list
 As an example demonstration of SSG, we have developed a simple token ring
 application. In this example, a group of processes is excecuted using MPI,
 with the MPI communicator used to create an SSG group. Using group rank
-information, a token is passed around the ring, originating and ending at
-rank 0. After each rank receives the forwarded token, it shuts down.
+information, a token is passed around the logical group ring, originating and
+ending at rank 0. After each rank receives the forwarded token, it shuts down.
 
 To build this example, run the following:
 
