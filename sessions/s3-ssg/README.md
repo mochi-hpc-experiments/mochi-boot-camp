@@ -60,3 +60,27 @@ example output
 ```
 
 ## Modifying the SSG example
+
+Once comfortable with the initial token ring implementation, we will
+attempt to modify its behavior. Rather than having all ranks shutdown
+immediately on receiving the token, we will instead have rank 0 initiate
+shutdowns in  reverse-order through the ring once it receives the token. So,
+assuming 4 members, once rank 0 receives the initial token, it will tell rank 3
+to shutdown, who will tell rank 2 to shutdown, etc., with rank 0 shutting down
+last. This requires definition of a new Margo RPC as well as some additional
+logic in the existing token forwarding RPC handlers.
+
+Executable `ssg-token-ring2` fully implements this new functionality, which can
+be confirmed by executing:
+
+```
+example output
+```
+
+As an exercise, try extending the initial token ring example to account for this
+new functionality by directly modifying `ssg-token-ring1.c` and
+re-building/re-running. The source code contains `XXX` markers to help point
+participants to the right locations in the code to modify. Participants are also
+welcome to examine the `ssg-token-ring2.c` source directly for inspiration.
+
+Let us know if you have any questions!
