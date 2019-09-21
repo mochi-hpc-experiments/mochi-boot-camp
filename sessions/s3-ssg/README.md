@@ -30,5 +30,12 @@ your environment with:
 module list
 ```
 
+## Building and running the SSG example
+
+```
+cd ~/bootcamp/mochi-boot-camp/sessions/s3-ssg/token-ring
+make
+```
+
 TODO: overview presentation
 TODO: example
