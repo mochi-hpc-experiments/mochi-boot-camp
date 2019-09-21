@@ -8,10 +8,10 @@ attempting to run and modify an SSG example.
 
 ## Installing SSG
 
-Run the following to download, compile, and install Margo:
+Run the following to download, compile, and install SSG:
 
 ```
-spack install margo
+spack install ssg
 ```
 
 Note that this SSG installation depends on MPI, with Spack able to identify
@@ -20,7 +20,14 @@ an existing mpich installation on the system.
 To load the SSG module, run the following:
 
 ```
-spack load -r margo
+spack load -r ssg
+```
+
+... and again inspect to confirm SSG, Margo, etc. modules have been loaded in
+your environment with:
+
+```
+module list
 ```
 
 TODO: overview presentation
