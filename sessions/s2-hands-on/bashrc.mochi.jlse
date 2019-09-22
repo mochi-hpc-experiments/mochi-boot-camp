@@ -1,0 +1,4 @@
+# Mochi bootcamp 2019 environment
+
+export PATH="/soft/compilers/gcc/8.2.0/linux-rhel7-x86_64/bin/:$PATH"
+. ~/bootcamp/spack/share/spack/setup-env.sh 
