@@ -164,11 +164,11 @@ static void shutdown_forward_recv(hg_handle_t h)
     struct server_data* serv_data = (struct server_data *)
         margo_registered_data(mid, info->id);
 
-    printf("Member %d shutting down\n", serv_data->self_rank);
-
     /* non-zero ranks continue forwarding shutdown request */
     if (serv_data->self_rank > 0)
         shutdown_forward(serv_data);
+
+    printf("Member %d shutting down\n", serv_data->self_rank);
 
     /* shutdown signal */
     margo_destroy(h);
