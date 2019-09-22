@@ -1,7 +1,5 @@
 # Mochi Boot Camp Session 3: SSG
 
-TODO: overview presentation
-
 Please refer back to documentation from
 [Session 2: Hands-on](sessions/s2-hands-on/README.md) for general details on
 logging onto JLSE, installing Mochi software, and running jobs. We will build
