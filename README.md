@@ -6,6 +6,40 @@ Welcome to the 2019 Mochi Boot Camp!
 
 Please see the [agenda](https://docs.google.com/spreadsheets/d/17lOj8Kk-ySFfTkOc7W-2pTVB7kNgrnO0VzB1RDVmKAU/edit?usp=sharing) for the latest updates.
 
+# Meeting logistics
+
+##  Meeting time
+
+* 9am to 5pm each day
+* Tuesday Sept. 24 through Thursday Sept. 26
+
+## Meeting location:
+
+* Building 202, room B169
+* See https://www.anl.gov/sites/www/files/2018-10/ANL_map_of_argonne_10182018.pdf
+* Note that this is *not* the TCS building (the home building for our
+  department, if you have visited before)
+* Visitors must enter through the north gate
+* Note that there is a road closure due to construction, so you may need
+  to take a slightly longer route depending on whether you are coming from
+  the north gate or from the guest house
+
+## Communication
+
+Feel free to post on mochi-bootcamp-2019@lists.mcs.anl.gov if
+you would like; all attendees and instructors are members We
+have also created a public Slack space for Mochi, which includes
+a channel specific to next week's bootcamp.  Please join if you
+would like to communicate with us or other Mochi users via Slack!
+https://join.slack.com/t/mochi-sds/shared_invite/enQtNzYyMTExNjQyMTE4LTc1ZTkxYzVmNTFkZTZjMjM4MmFjNmE3NDM2ZDZmOTI3ZjljOGI1YTNlZjE5Y2JiYWQ1M2FlNDgyMTJkYzhhNjU
+
+## Food
+
+Coffee/beverage/snack service will be available when the meeting
+starts and will be refreshed in the afternoon.  For lunch we will
+probably walk to the on-site cafeteria, which has a variety of
+food options
+
 # System access for hands-on development
 
 We will be using systems in the [Joint Laboratory for System Evaluation
