@@ -197,7 +197,7 @@ The following command will allocate a single JLSE node for your use for 8
 hours and open up an interactive terminal on that node.
 
 ```
-qsub qsub -I -n 1 -t 480 -q R.mochi_day1
+qsub -I -n 1 -t 480 -q R.mochi_day1
 ```
 
 NOTE: the "R.mochi_day1" part is the name of a reservation that we have in
