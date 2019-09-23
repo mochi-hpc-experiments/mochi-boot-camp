@@ -54,7 +54,19 @@ of the token (i.e., rank 1 shuts down first, rank 0 shuts down last).
 Using your test system, try executing the example to confirm the behavior:
 
 ```
-example output
+[snyder@it03 token-ring]$ mpirun -n 4 ./ssg-token-ring1
+Member 0 forwarding token 48879 to 1
+Member 1 got token 48879
+Member 1 forwarding token 48879 to 2
+Member 1 shutting down
+Member 2 got token 48879
+Member 2 forwarding token 48879 to 3
+Member 2 shutting down
+Member 3 got token 48879
+Member 3 forwarding token 48879 to 0
+Member 3 shutting down
+Member 0 got token 48879
+Member 0 shutting down
 ```
 
 ## Modifying the SSG example
@@ -72,7 +84,24 @@ Executable `ssg-token-ring2` fully implements this new functionality, which can
 be confirmed by executing:
 
 ```
-example output
+[snyder@it03 token-ring]$ mpirun -n 4 ./ssg-token-ring2
+Member 1 got token 48879
+Member 0 forwarding token 48879 to 1
+Member 1 forwarding token 48879 to 2
+Member 2 got token 48879
+Member 2 forwarding token 48879 to 3
+Member 3 got token 48879
+Member 3 forwarding token 48879 to 0
+Member 0 got token 48879
+Member 0 forwarding shutdown to 3
+Member 3 forwarding shutdown to 2
+Member 3 shutting down
+Member 2 forwarding shutdown to 1
+Member 2 shutting down
+Member 1 forwarding shutdown to 0
+Member 1 shutting down
+Member 0 shutting down
+
 ```
 
 As an exercise, try extending the initial token ring example to account for this
