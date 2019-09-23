@@ -120,7 +120,37 @@ inconsistency.  That's entirely RobL's fault.
 spack install sdskeyval
 ```
 
-We don't need to write a simple sds-keyval server because the package already provides one for us:
+In the `sdskv` directory you will find `server.c` and `client.c`, demonstrating
+a simple client and server that does a basic put and get of a key/val pair
+
+```
+    cd sdskv
+    make
+```
+
+In one shell, launch the server (or put it in the background if you want one shell)
+
+For example:
+```
+./server
+Server running at address na+sm://12829/0
+```
+
+Then the client can connect to that server, run its simple exercise, and shut down the server:
+
+```
+./client na+sm://12829/0
+key 10 had value 99
+```
+
+### Exercise
+
+In this exercse instead of putting an integer key and an integer value, I
+want you to store a bunch of strings.  Turns out a good source of string is in
+`/usr/share/dict/words`.  Can you prove you stored what you thought you stored?
+
+We provided a simple sds-keyval server in the prior example, but the package
+already provides a standalone, full  sds-keyval server for us:
 
 ```
 sdskv-server-daemon na+sm testdb:ldb -f sdskv.addr
@@ -130,9 +160,3 @@ That command asks the SDS Keyval server to listen over the "shared memory"
 interconnect, operate on a database called "testdb" using the "leveldb"
 backend, and to write the server address out to a file 'sdskv.addr' that we can
 then use for our client.
-
-### Exercise
-
-
-
-
