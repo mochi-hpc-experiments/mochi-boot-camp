@@ -1,0 +1,3 @@
+[submodule "mochi-doc"]
+	path = mochi-doc
+	url = https://xgitlab.cels.anl.gov/sds/mochi-doc
