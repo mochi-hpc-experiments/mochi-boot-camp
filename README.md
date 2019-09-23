@@ -16,7 +16,9 @@ there as part of [Session 2: Hands-on](sessions/s2-hands-on/README.md).
 # Session materials
 
 Note that you can clone this repository to get a copy of slides, reference
-materials, etc. contained within it.
+materials, etc. contained within it. Doing `git clone --recurse-submodules https://xgitlab.cels.anl.gov/sds/mochi-boot-camp.git`
+will also give you the documentation for Margo, Thallium, Mercury, and ABT-IO, in the `mochi-doc` folder. This documentation
+also contains source code for all the examples.
 
 * [Session 1: Margo and Thallium](sessions/s1-margo-thallium/README.md)
 * [Session 2: Hands-on](sessions/s2-hands-on/README.md) and [presentation 2](sessions/s2-hands-on/mbc-s2-hands-on.pdf)
