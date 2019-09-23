@@ -110,3 +110,29 @@ strings /dev/shm/bake.dat
 
 ### Exercise
 
+
+## sds-keyval
+
+You'll need the `sdskeyval` package: sorry about the "dash or no dash"
+inconsistency.  That's entirely RobL's fault.
+
+```
+spack install sdskeyval
+```
+
+We don't need to write a simple sds-keyval server because the package already provides one for us:
+
+```
+sdskv-server-daemon na+sm testdb:ldb -f sdskv.addr
+```
+
+That command asks the SDS Keyval server to listen over the "shared memory"
+interconnect, operate on a database called "testdb" using the "leveldb"
+backend, and to write the server address out to a file 'sdskv.addr' that we can
+then use for our client.
+
+### Exercise
+
+
+
+
