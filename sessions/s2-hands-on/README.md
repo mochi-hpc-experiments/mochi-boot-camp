@@ -197,8 +197,16 @@ The following command will allocate a single JLSE node for your use for 8
 hours and open up an interactive terminal on that node.
 
 ```
-qsub qsub -I -n 1 -t 480 -q it
+qsub qsub -I -n 1 -t 480 -q R.mochi_day1
 ```
+
+NOTE: the "R.mochi_day1" part is the name of a reservation that we have in
+place to guarantee node availability on the first day from 9am to 5pm.
+There are identical reservations in place for day 2 and day 3 called
+R.mochi_day2 and R.mochi_day3.
+
+You are welcome to submit jobs after hours as well!  Just use `-q it` during
+those times for the general availability queues for the nodes we are using.
 
 Once the terminal is open, you can open additional terminals to that node
 with ssh.  For example:
