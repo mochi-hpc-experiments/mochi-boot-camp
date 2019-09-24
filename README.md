@@ -54,7 +54,7 @@ materials, etc. contained within it. Doing `git clone --recurse-submodules https
 will also give you the documentation for Margo, Thallium, Mercury, and ABT-IO, in the `mochi-doc` folder. This documentation
 also contains source code for all the examples.
 
-* [Introduction]
+* Introduction
   * [presentation](sessions/intro/mochi-boot-camp-intro.pdf)
 * [Session 1: Margo and Thallium](sessions/s1-margo-thallium/README.md)
   * [presentation](sessions/s1-margo-thallium/mbc-s1-margo-and-thallium.pdf)
