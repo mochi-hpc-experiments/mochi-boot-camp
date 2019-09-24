@@ -203,13 +203,18 @@ The following command will allocate a single JLSE node for your use for 8
 hours and open up an interactive terminal on that node.
 
 ```
-qsub -I -n 1 -t 480 -q R.mochi_day1
+qsub -I -n 1 -t 300 -q R.mochi_day1
 ```
 
 NOTE: the "R.mochi_day1" part is the name of a reservation that we have in
 place to guarantee node availability on the first day from 9am to 5pm.
 There are identical reservations in place for day 2 and day 3 called
 R.mochi_day2 and R.mochi_day3.
+
+NOTE: the -t argument is in minutes.  During the bootcamp you must select a
+time limit that will end by 5pm that day.  The above example uses 300 minutes
+(5 hours), which means the command will work until 12pm, at which point you
+would need to use a smaller number to request an allocation.
 
 You are welcome to submit jobs after hours as well!  Just use `-q it` during
 those times for the general availability queues for the nodes we are using.
