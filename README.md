@@ -55,6 +55,7 @@ will also give you the documentation for Margo, Thallium, Mercury, and ABT-IO, i
 also contains source code for all the examples.
 
 * [Session 1: Margo and Thallium](sessions/s1-margo-thallium/README.md)
+  * [presentation](sessions/s1-margo-thallium/mbc-s1-margo-and-thallium.pdf)
 * [Session 2: Hands-on](sessions/s2-hands-on/README.md)
   * [presentation](sessions/s2-hands-on/mbc-s2-hands-on.pdf)
 * [Session 3: SSG](sessions/s3-ssg/README.md)
