@@ -55,8 +55,10 @@ will also give you the documentation for Margo, Thallium, Mercury, and ABT-IO, i
 also contains source code for all the examples.
 
 * [Session 1: Margo and Thallium](sessions/s1-margo-thallium/README.md)
-* [Session 2: Hands-on](sessions/s2-hands-on/README.md) and [presentation 2](sessions/s2-hands-on/mbc-s2-hands-on.pdf)
-* [Session 3: SSG](sessions/s3-ssg/README.md) and [presentation 3](sessions/s3-ssg/mbc-s3-ssg.pdf)
+* [Session 2: Hands-on](sessions/s2-hands-on/README.md)
+  * [presentation](sessions/s2-hands-on/mbc-s2-hands-on.pdf)
+* [Session 3: SSG](sessions/s3-ssg/README.md)
+  * [presentation](sessions/s3-ssg/mbc-s3-ssg.pdf)
 * [Session 4: Components](sessions/s4-componets/README.md)
   * [presentation: storage components](sessions/s4-components/mbc-s4-components-storage.pdf)
 * [Session 5: Example Composed Services](sessions/s5-composed/README.md)
