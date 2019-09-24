@@ -130,7 +130,7 @@ the JLSE environment.  It primarily does the following:
 You can activate this configuration for your account by doing the following:
 
 ```
-cp ~/bootcamp/mochi-boot-camp/s2-hands-on/packages.yaml ~/.spack/linux/
+cp ~/bootcamp/mochi-boot-camp/session/s2-hands-on/packages.yaml ~/.spack/linux/
 ```
 
 At this point you are ready to install and run Mochi software!
