@@ -96,6 +96,5 @@ packages:
            mpich@3.1.4: /soft/libraries/mpi/mpich-gcc-3.1.4
         buildable: False
     all:
-        target: ["x86_64"]
         providers:
             mpi: [mpich]

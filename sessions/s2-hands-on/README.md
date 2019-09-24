@@ -53,8 +53,14 @@ from github, and then adding spack to your environment:
 ```
 cd ~/bootcamp
 git clone https://github.com/spack/spack.git
+cd spack
+git checkout a940ff3
 . ~/bootcamp/spack/share/spack/setup-env.sh
 ```
+
+** PLEASE NOTE: the `git checkout a940ff3` step shown above is a temporary
+workaround that is SPECIFIC TO THE JLSE ENVIRONMENT.  Please omit this
+step in all other environments where you may install Mochi. **
 
 At this point, the `spack` command line tool is available to you, but we
 need just a few more steps to configure it ideally for this envionment.
