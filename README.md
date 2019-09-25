@@ -66,6 +66,7 @@ also contains source code for all the examples.
   * [presentation: storage components](sessions/s4-components/mbc-s4-components-storage.pdf)
   * [presentation: key/value components](sessions/s4-components/mbc-s4-components-sdskv.pdf)
 * [Session 5: Example Composed Services](sessions/s5-composed/README.md)
+  * [presentation: composed services](sessions/s5-composed/mbc-s5-composed-services.pdf)
 * [Session 6: Miscellaneous](sessions/s6-misc/README.md)
   * [presentation: networks and RPC tuning](sessions/s6-misc/mbc-s6-fabrics-and-rpcs.pdf)
 
