@@ -69,4 +69,4 @@ also contains source code for all the examples.
   * [presentation: composed services](sessions/s5-composed/mbc-s5-mochi-composed-services.pdf)
 * [Session 6: Miscellaneous](sessions/s6-misc/README.md)
   * [presentation: networks, debugging, and RPC tuning](sessions/s6-misc/mbc-s6-fabrics-and-rpcs.pdf)
-
+  * [presentation: affinity and threading](sessions/s6-misc/mbc-s6-affinity-and-threading.pdf)
