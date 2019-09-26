@@ -68,5 +68,5 @@ also contains source code for all the examples.
 * [Session 5: Example Composed Services](sessions/s5-composed/README.md)
   * [presentation: composed services](sessions/s5-composed/mbc-s5-mochi-composed-services.pdf)
 * [Session 6: Miscellaneous](sessions/s6-misc/README.md)
-  * [presentation: networks and RPC tuning](sessions/s6-misc/mbc-s6-fabrics-and-rpcs.pdf)
+  * [presentation: networks, debugging, and RPC tuning](sessions/s6-misc/mbc-s6-fabrics-and-rpcs.pdf)
 
