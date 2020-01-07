@@ -115,7 +115,7 @@ Resolving deltas: 100% (828/828), done.
 At this point you can install any Mochi software component, but it will
 likely download and compile more packages than are strictly necessary, which
 is time consuming.  At this point we will install a `packages.yaml` file
-that customizes Spack by informing if of system packages that it should
+that customizes Spack by informing it of system packages that it should
 reuse, and specifies a subset of network transports to use for Mochi.
 
 We have provided a pre-configured `packages.yaml` file for this purpose in
