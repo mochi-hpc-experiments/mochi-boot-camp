@@ -23,8 +23,15 @@ TODO: fine tune
 
 ### Communication
 
-TODO: do we need a mailing list for attendees here? Slack? We have these setup
-already for the ANL bootcamp, but unclear how to repurpose them...
+Please join the 'mochi-ecp-2020' mailing list for announcements, updates, and discussion
+
+https://lists.mcs.anl.gov/mailman/listinfo/mochi-ecp-2020
+
+We are also on Slack.  Here's the invite link (expires 5 Feb 2020) for the 'moch-sds' slack instance:
+
+https://join.slack.com/t/mochi-sds/shared_invite/enQtODk3NjAyMjc3MDk0LWExYmM5ODcwODA0NmVjMGJkYjAwOTFiMzM0ZjY1ZTA0ZGRiMzUxZjJjNGYxNGQyNzk2NTY1ZWMwMTViZDQxMjU
+
+The whole instance is available for general Mochi discussion.  We have set up #mochi-bootcamp-ecp-2020 for attendees to the ECP session
 
 # System access for hands-on development
 
