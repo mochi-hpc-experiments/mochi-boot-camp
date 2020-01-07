@@ -1,0 +1,6 @@
+# Mochi bootcamp 2020 environment for summit.ornl.gov
+
+# no need to set compiler paths: spack extracted path information from the
+# environment when user ran 'spack compiler find'
+
+. ~/bootcamp/spack/share/spack/setup-env.sh

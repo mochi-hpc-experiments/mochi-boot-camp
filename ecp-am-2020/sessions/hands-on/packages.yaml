@@ -1,0 +1,60 @@
+packages:
+    all:
+        compiler: [gcc@9.1.0, xl]
+        providers:
+            mpi: [spectrum-mpi, mpich]
+            pkgconfig: [pkg-config]
+    spectrum-mpi:
+        modules:
+            spectrum-mpi@10.3.0.1%gcc: spectrum-mpi/10.3.0.1-20190611
+        buildable: False
+    openssl:
+        paths:
+            openssl@1.0.2k: /usr
+        buildable: False
+    # spack issue https://github.com/spack/spack/issues/11955 : system cmake
+    # (also built by spack) will confuse other cmake-using packages
+    #cmake:
+    #    buildable: false
+    #    modules:
+    #        cmake@3.15.2: cmake/3.15.2
+    autoconf:
+        paths:
+            autoconf@2.69: /usr
+        buildable: False
+    automake:
+        modules:
+            automake@1.16.1: automake/1.16.1
+        buildable: False
+    ucx:
+        paths:
+            ucx@1.5.1: /usr
+        buildable: False
+    libnl:
+        modules:
+            libnl@3.3.0: libnl/3.3.0
+        buildable: False
+    rdma-core:
+        paths:
+            rdma-core@20: /usr
+        buildable: False
+    findutils:
+        paths:
+            findutils@4.5.11: /usr
+        buildable: False
+    libxml2:
+        paths:
+            libxml2@2.9.1: /usr
+        buildable: False
+    ssg:
+        variants: +mpi
+    mercury:
+        variants: ~boostsys
+    # the 'mlx' provider for libfabric is not maintained
+    # https://github.com/ofiwg/libfabric/issues/4806#issuecomment-461678426
+    libfabric:
+        variants: fabrics=verbs,rxm,mrail
+    thallium:
+        variants: +cereal
+    mpich:
+        variants: netmod=ucx device=ch4
