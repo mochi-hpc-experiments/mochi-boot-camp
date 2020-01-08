@@ -4,17 +4,22 @@ Welcome to the 2020 ECP AM Mochi tutorial!
 
 ## Schedule
 
-TODO: fine tune
-
 | Topic    | Time     |
 | ---      | ---      | 
-| Introduction                   | 8:30 AM - 8:50 AM  |
-| Test systems background        | 8:50 AM - 9:10 AM  |
-| Mochi overview - core          | 9:10 AM - 11:30 AM |
-| Mochi overview - microservices | 9:10 AM - 11:30 AM |
-| Lunch                          | 11:30 AM - 12:30 PM |
-| Composing Mochi services       | 12:30 PM - 1:30 PM
-| Mochi service hacking          | 1:30 PM - 4:30 PM |
+| Welcome and introductions (Rob Ross) | 8:30 AM - 9:00 AM  |
+| Summit system details (Rob Latham) | 9:00 AM - 9:20 AM  |
+| Mochi core overview - Margo/Thallium (Matthieu Dorier) | 9:20 AM - 10:00 AM |
+| Break | 10:00 AM - 10:30 AM |
+| Mochi core overview - SSG (Shane Snyder) | 10:30 AM - 11:00 AM |
+| Mochi microservice overview - Bake (Phil Carns)| 11:00 AM - 11:20 AM |
+| Mochi microservice overview - SDSKV/SDSDKV (Rob Latham)| 11:20 AM - 12:00 PM |
+| Lunch                            | 12:00 PM - 1:00 PM |
+| Composing Mochi services (Matthieu Dorier) | 1:00 PM - 1:30 PM |
+| Mochi best practices (Phil Carns) | 1:30 PM - 1:45 PM |
+| Mochi service hacking            | 1:45 PM - 3:00 PM |
+| Break | 3:00 PM - 3:30 PM |
+| Hacking continued | 3:30 PM - 4:15 PM |
+| Recap, lessons learned, next steps | 4:15 PM - 4:30 PM |
 
 ## Meeting logistics
 
