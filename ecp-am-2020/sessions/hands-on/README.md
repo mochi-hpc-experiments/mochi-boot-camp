@@ -160,7 +160,11 @@ that allocation with `jsrun`
 
 To get an interactive allocation for 15 minutes:
 ```
-bsub -Is -W 0:15 -nnodes 2  -P CSC332 $SHELL
+$ bsub -Is -W 0:15 -nnodes 2  -P CSC332 $SHELL
+Job <823109> is submitted to default queue <batch>.
+<<Waiting for dispatch ...>>
+<<Starting on batch1>>
+[\u@batch1.summit \W]\$ 
 ```
 
 You'll need to replace `-P CSC332` with the name of whichever project you're using.
@@ -176,17 +180,30 @@ loaded modules and built the client and server, things should work ok.
 
 
 ```
-cd ~/bootcamp/ecp-am-2020/sessions/hands-on/sum
-jsrun -n 1 -r 1 -g ALL_GPUS ./server &
+# no need to change directories: interactive bsub drops you in the directory
+# from which you executed it
+$ jsrun -n 1 -r 1 -g ALL_GPUS ./server &
+[1] 129086
+Server running at address ofi+verbs;ofi_rxm://10.41.0.103:49201
+```
 
 ```
 
-Next, run the client, passing it the address string
+Next, run the client, passing it the address string given to you by the server.
 
 ```
-jsrun -n 1 -r 1 -g ALL_GPUS ./client ofi+verbs://blah
+[\u@batch1.summit \W]\$ jsrun -n 1 -r 1 -g ALL_GPUS ./client 'ofi+verbs;ofi_rxm://10.41.0.103:49201'
+Computed 42 + 43 = 85
+Computed 44 + 45 = 89
+Computed 46 + 47 = 93
+Computed 48 + 49 = 97
+Got response: 42+43 = 85
+Got response: 44+45 = 89
+Got response: 46+47 = 93
+Got response: 48+49 = 97
+[1]  + done       jsrun -n 1 -r 1 -g ALL_GPUS ./server
+[\u@batch1.summit \W]\$ exit
 ```
-
 
 ## Additional resources
 
