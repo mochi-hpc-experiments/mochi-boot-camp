@@ -61,7 +61,6 @@ that can be added to spack with the `spack repo add` command:
 [robl@login1]~% cd ~/bootcamp
 [robl@login1]~/bootcamp% git clone https://xgitlab.cels.anl.gov/sds/sds-repo.git
 ...
-robl@login1]~/bootcamp% cd sds-repo
 robl@login1]~/bootcamp/sds-repo% spack repo add sds-repo
 [carns@jlselogin2 bootcamp]$
 ==> Added repo with namespace 'sds'.
