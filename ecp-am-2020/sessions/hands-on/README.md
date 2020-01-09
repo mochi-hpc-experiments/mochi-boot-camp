@@ -189,8 +189,6 @@ $ jsrun -n 1 -r 1 -g ALL_GPUS ./server &
 Server running at address ofi+verbs;ofi_rxm://10.41.0.103:49201
 ```
 
-```
-
 Next, run the client, passing it the address string given to you by the server.
 
 ```
