@@ -28,6 +28,7 @@ int main(int argc, char** argv)
     margo_addr_to_string(mid, addr_str, &addr_str_size, my_address);
     margo_addr_free(mid,my_address);
     printf("Server running at address %s\n", addr_str);
+    fflush(stdout);
 
     hg_id_t rpc_id = MARGO_REGISTER(mid, "sum", sum_in_t, sum_out_t, sum);
     margo_register_data(mid, rpc_id, &svr_data, NULL);
