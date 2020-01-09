@@ -53,7 +53,7 @@ packages:
     # the 'mlx' provider for libfabric is not maintained
     # https://github.com/ofiwg/libfabric/issues/4806#issuecomment-461678426
     libfabric:
-        variants: fabrics=verbs,rxm,mrail
+        variants: fabrics=verbs,rxm
     thallium:
         variants: +cereal
     mpich:
