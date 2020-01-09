@@ -61,8 +61,8 @@ that can be added to spack with the `spack repo add` command:
 [robl@login1]~% cd ~/bootcamp
 [robl@login1]~/bootcamp% git clone https://xgitlab.cels.anl.gov/sds/sds-repo.git
 ...
-robl@login1]~/bootcamp/sds-repo% spack repo add sds-repo
-[carns@jlselogin2 bootcamp]$
+[robl@login1]~/bootcamp% spack repo add sds-repo
+[robl@login1]~/bootcamp%
 ==> Added repo with namespace 'sds'.
 ```
 ## Customizing Spack for ORNL/Summit environment
@@ -73,8 +73,9 @@ is time consuming.  At this point we will install a `packages.yaml` file
 that customizes Spack by informing it of system packages that it should
 reuse, and specifies a subset of network transports to use for Mochi.
 
-We have provided a pre-configured `packages.yaml` file for this purpose in
-the JLSE environment.  It primarily does the following:
+We have provided a pre-configured `packages.yaml` file for this purpose
+that is already tailored to the Summit environment. It primarily does
+the following:
 
 * informs Spack to use already available software for certain common system
   packages (Spack by default will build these packages itself)
