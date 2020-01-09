@@ -126,6 +126,8 @@ dependencies, including Mercury and Argobots.  You can now load these
 packages by running:
 
 ```
+# re-load spack env to make sure that it finds new packages
+. ~/bootcamp/spack/share/spack/setup-env.sh
 spack load -r margo
 ```
 
