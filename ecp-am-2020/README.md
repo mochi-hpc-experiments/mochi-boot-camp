@@ -32,9 +32,9 @@ Please join the 'mochi-ecp-2020' mailing list for announcements, updates, and di
 
 https://lists.mcs.anl.gov/mailman/listinfo/mochi-ecp-2020
 
-We are also on Slack.  Here's the invite link (expires 5 Feb 2020) for the 'moch-sds' slack instance:
+We are also on Slack.  Here's the invite link (expires 27 Feb 2020) for the 'moch-sds' slack instance:
 
-https://join.slack.com/t/mochi-sds/shared_invite/enQtODk3NjAyMjc3MDk0LWExYmM5ODcwODA0NmVjMGJkYjAwOTFiMzM0ZjY1ZTA0ZGRiMzUxZjJjNGYxNGQyNzk2NTY1ZWMwMTViZDQxMjU
+https://join.slack.com/t/mochi-sds/shared_invite/enQtOTEzMzU1MDM2NDE4LTczYTQxMWU2MGY4NWUxMjc3ZGUwZGY3OGU2ZWQyNmZkNDFmMDllMDIxZTkzYWNhMGViYTMwM2I3MDI1ZjgxNWM
 
 The whole instance is available for general Mochi discussion.  We have set up #mochi-bootcamp-ecp-2020 for attendees to the ECP session
 
