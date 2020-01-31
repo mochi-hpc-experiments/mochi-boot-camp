@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#BSUB -P CSC332
+#BSUB -J fi_info
+#BSUB -o fi_info.o%J
+#BSUB -W 10
+#BSUB -nnodes 1
+
+jsrun -n 1 -r 1 -g ALL_GPUS fi_info
+
