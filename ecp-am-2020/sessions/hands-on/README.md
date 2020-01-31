@@ -1,5 +1,9 @@
 # Mochi Boot Camp: Hands-on
 
+This directory contains an overall "getting started" guide for running
+Mochi hands-on exercies on Summit. Additional exercises (referenced in
+the tutorial presentations) are available in subdirectories.
+
 ## Logging on to Summit
 
 ```ssh username@summit.olcf.ornl.gov```
