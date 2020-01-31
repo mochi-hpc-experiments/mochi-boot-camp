@@ -102,7 +102,7 @@ The following are the most important commands to know:
   install it (including dependencies and version numbers)
 * `spack install <package>` to install a package
 * `spack load -r <package>` to load the package into your environment
-* `module list` to observe what modules you have loaded
+* `spack find --loaded` to observe what modules you have loaded
 
 ## Setting up your profile to retain Spack and compiler settings
 
@@ -138,7 +138,7 @@ spack load -r margo
 ... and inspect to confirm that they are present in your environment with:
 
 ```
-module list
+spack find --loaded
 ```
 
 ## Compiling an example Mochi code
