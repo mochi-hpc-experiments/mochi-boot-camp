@@ -1,0 +1,39 @@
+#!/bin/sh
+#BSUB -P csc332
+#BSUB -W 0:5
+#BSUB -nnodes 2
+#BSUB -step_cgroup n
+#BSUB -J fabtest-rma
+
+#export FI_LOG_LEVEL=debug
+# you can use ~robl/soft/fabtests-1.8.1 if you have not installed it yourself.
+# Unfortunately, fabtests is not installed with the rest of the libfabric spack
+# package
+FABTESTS=${HOME}/soft/fabtests-1.8.1
+
+# output of 'fi_info'
+#
+#verbs:
+#    version: 1.0
+#ofi_rxm:
+#    version: 1.0
+#shm:
+#    version: 1.1
+#ofi_perf_hook:
+#    version: 1.0
+#ofi_noop_hook:
+#    version: 1.0
+#ofi_mrail:
+#    version: 1.0
+
+
+# the fabtest client needs a hostname to contact, so we have to do a little bit
+# of legwork
+HOST=$(grep -v 'batch' $LSB_DJOB_HOSTFILE | head -1)
+
+echo "host: $HOST"
+
+jsrun -n 1 -r 1 -c ALL_CPUS -g ALL_GPUS ${FABTESTS}/bin/fi_rma_bw -S all -p 'verbs' &
+# give libfabric a chance to set up
+sleep 3
+jsrun -x $HOST -n 1 -r 1 -c ALL_CPUS -g ALL_GPUS ${FABTESTS}/bin/fi_rma_bw -m -s $HOST -S all -p 'verbs'
