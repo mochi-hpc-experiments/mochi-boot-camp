@@ -46,6 +46,10 @@ packages:
         paths:
             libxml2@2.9.1: /usr
         buildable: False
+    libuuid:
+        paths:
+            libuuid@2.23.2: /usr
+        buildable: False
     ssg:
         variants: +mpi
     mercury:
