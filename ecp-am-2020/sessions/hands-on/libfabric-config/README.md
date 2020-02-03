@@ -1,4 +1,4 @@
-# libfabric-config hands-on exercise
+# Mochi Boot Camp: libfabric-config hands-on exercise
 
 The purpose of this example is to show how to query available
 libfabric-compatible interfaces on Summit.
