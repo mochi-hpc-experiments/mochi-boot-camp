@@ -5,6 +5,8 @@ SCRATCHDIR="/gpfs/alpine/`echo $LSB_PROJECT_NAME | tr '[:upper:]' '[:lower:]'`/s
 # wait for server to start
 sleep 10
 
-bake-copy-to example.dat `cat $SCRATCHDIR/addr.dat` 1 1
+cp example.dat /mnt/bb/$USER/
+
+bake-copy-to /mnt/bb/$USER/example.dat `cat $SCRATCHDIR/addr.dat` 1 1
 
 bake-shutdown `cat $SCRATCHDIR/addr.dat`
