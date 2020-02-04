@@ -12,11 +12,11 @@ the profiling tool chain.
 
 ## Concepts
 
-The first step is to enable RPC instrumentation at runtime.  There are
-some programmatic ways to do this (see the Margo documentation for details),
-but the most straightforward method is to simply set the
-`MARGO_ENABLE_PROFILING` environment variable for all participating
-processes, including both clients and servers.
+The first step in collecting an Mochi RPC profile is to enable RPC
+instrumentation at runtime.  There are some programmatic ways to do this
+(see the Margo documentation for details), but the most straightforward
+method is to simply set the `MARGO_ENABLE_PROFILING` environment variable
+for all participating processes, including both clients and servers.
 
 Margo will detect this environment variable and enable profiling.  In this
 mode, data is collected over the duration of execution and then written to a
