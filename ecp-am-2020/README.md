@@ -21,10 +21,13 @@ Welcome to the 2020 ECP AM Mochi tutorial!
 | Hacking continued | 3:30 PM - 4:15 PM |
 | Recap, lessons learned, next steps | 4:15 PM - 4:30 PM |
 
+See links at the bottom of this page for access to presentations and
+hands-on instructions for each agenda item.
+
 ## Meeting logistics
 
 * Thursday Feb. 6, 8:30 AM to 4:30 PM
-* TODO: Where?
+* Champions VI classroom (max capacity 35) in the Royal Sonesta
 
 ### Communication
 
@@ -38,19 +41,29 @@ https://join.slack.com/t/mochi-sds/shared_invite/enQtOTEzMzU1MDM2NDE4LTczYTQxMWU
 
 The whole instance is available for general Mochi discussion.  We have set up #mochi-bootcamp-ecp-2020 for attendees to the ECP session
 
-# System access for hands-on development
-
-TODO: pointers to system-specific information useful to users, depending on feedback from attendees
-
 # Session materials
 
 Note that you can clone this repository to get a copy of slides, reference
-materials, etc. contained within it. Doing `git clone --recurse-submodules https://xgitlab.cels.anl.gov/sds/mochi-boot-camp.git`
+materials, etc. Doing `git clone --recurse-submodules https://xgitlab.cels.anl.gov/sds/mochi-boot-camp.git`
 will also give you the documentation for Margo, Thallium, Mercury, and ABT-IO, in the `mochi-doc` folder. This documentation
-also contains source code for all the examples.
+also contains source code for all the examples.  The information particular
+to the ECP annual meeting can be found in the ecp-am-2020 subdirectory.
+
+You can also jump to specific material from the agenda via the following
+links:
 
 * Introduction
-* Session 1: Test systems background
-* Session 2: Mochi overview - core
-* Session 3: Mochi overview - microservices
-* Session 4: Composing Mochi services
+    * [presentation](sessions/intro/mochi-boot-camp-intro-ECP2020.pdf)
+* Summit system details
+    * [presentation](sessions/overview/system-overview.pdf)
+    * [hands-on exercises](sessions/hands-on/README.md)
+* Mochi core overview
+* Bake
+    * [presentation](sessions/bake/mochi-boot-camp-bake-ECP2020.pdf)
+    * [hands-on exercises](sessions/hands-on/bake/README.md)
+* SDSKV/SDSDKV
+* Composing Mochi services
+* Best practices
+    * [presentation](sessions/best-practice/mochi-boot-camp-best-practice-ECP2020.pdf)
+    * [supplemental presentation: threading](sessions/best-practice/mochi-boot-camp-threading-supplement-ECP2020.pdf)
+    * [hands-on](sessions/hands-on/libfabric-config/README.md)
