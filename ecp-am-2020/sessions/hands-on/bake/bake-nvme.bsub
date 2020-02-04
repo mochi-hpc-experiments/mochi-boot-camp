@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#BSUB -P CSC332
+#BSUB -J bake-nvme
+#BSUB -o bake-nvme.o%J
+#BSUB -W 10
+#BSUB -nnodes 2
+#BSUB -alloc_flags NVME
+
+jsrun -n 1 -r 1 -g ALL_GPUS ./bake-server-nvme.sh &
+jsrun -n 1 -r 1 -g ALL_GPUS ./bake-client.sh &
+
