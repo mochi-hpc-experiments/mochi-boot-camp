@@ -50,7 +50,7 @@ of the token (i.e., rank 1 shuts down first, rank 0 shuts down last).
 Using your test system, try executing the example to confirm the behavior:
 
 ```
-[snyder@it03 token-ring]$ mpirun -n 4 ./ssg-token-ring1
+[snyder@it03 token-ring]$ jsrun -n 4 ./ssg-token-ring1
 Member 0 forwarding token 48879 to 1
 Member 1 got token 48879
 Member 1 forwarding token 48879 to 2
@@ -80,7 +80,7 @@ Executable `ssg-token-ring2` fully implements this new functionality, which can
 be confirmed by executing:
 
 ```
-[snyder@it03 token-ring]$ mpirun -n 4 ./ssg-token-ring2
+[snyder@it03 token-ring]$ jsrun -n 4 ./ssg-token-ring2
 Member 1 got token 48879
 Member 0 forwarding token 48879 to 1
 Member 1 forwarding token 48879 to 2
