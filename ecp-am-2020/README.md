@@ -56,14 +56,16 @@ links:
     * [presentation](sessions/intro/mochi-boot-camp-intro-ECP2020.pdf)
 * Summit system details
     * [presentation](sessions/overview/system-overview.pdf)
-    * [hands-on exercises](sessions/hands-on/README.md)
-* Mochi core overview
+    * [hands-on exercise](sessions/hands-on/README.md)
+* Mochi core overview: Margo/Thallium
+* Mochi core overview: SSG
 * Bake
     * [presentation](sessions/bake/mochi-boot-camp-bake-ECP2020.pdf)
-    * [hands-on exercises](sessions/hands-on/bake/README.md)
+    * [hands-on exercise](sessions/hands-on/bake/README.md)
 * SDSKV/SDSDKV
 * Composing Mochi services
 * Best practices
     * [presentation](sessions/best-practice/mochi-boot-camp-best-practice-ECP2020.pdf)
     * [supplemental presentation: threading](sessions/best-practice/mochi-boot-camp-threading-supplement-ECP2020.pdf)
-    * [hands-on](sessions/hands-on/libfabric-config/README.md)
+    * [hands-on exercise (libfabric)](sessions/hands-on/libfabric-config/README.md)
+    * [hands-on exercise (RPC profiling)](sessions/hands-on/rpc-profiling/README.md)
