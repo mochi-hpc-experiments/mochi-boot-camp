@@ -66,6 +66,7 @@ links:
     * [presentation](sessions/bake/mochi-boot-camp-bake-ECP2020.pdf)
     * [hands-on exercise](sessions/hands-on/bake/README.md)
 * SDSKV/SDSDKV
+    * [presentation](sessions/sdskv/mochi-boot-camp-sdskv.pdf)
 * Composing Mochi services
     * [presentation](sessions/composing/example-composed-services-ECP2020.pdf)
 * Best practices
