@@ -58,14 +58,15 @@ links:
     * [presentation](sessions/overview/system-overview.pdf)
     * [hands-on exercise](sessions/hands-on/README.md)
 * Mochi core overview: Margo/Thallium
+    * [presentation](sessions/margo-thallium/margo-thallium-ECP2020.pdf)
 * Mochi core overview: SSG
     * [presentation](sessions/ssg/mochi-boot-camp-ssg-ECP2020.pdf)
 * Bake
     * [presentation](sessions/bake/mochi-boot-camp-bake-ECP2020.pdf)
     * [hands-on exercise](sessions/hands-on/bake/README.md)
 * SDSKV/SDSDKV
-    * [presentation](sessions/sdskv/mochi-boot-camp-sdskv.pdf)
 * Composing Mochi services
+    * [presentation](sessions/composing/example-composed-services-ECP2020.pdf)
 * Best practices
     * [presentation](sessions/best-practice/mochi-boot-camp-best-practice-ECP2020.pdf)
     * [supplemental presentation: threading](sessions/best-practice/mochi-boot-camp-threading-supplement-ECP2020.pdf)
