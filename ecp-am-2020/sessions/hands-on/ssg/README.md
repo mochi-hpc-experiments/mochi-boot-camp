@@ -1,4 +1,4 @@
-# Mochi Boot Camp Session 3: SSG
+# Mochi Boot Camp: SSG
 
 Please set up the basic Mochi environment (with spack) on Summit following the instructions in the top level hands on directory 'mochi-boot-camp/ecp-am-2020/sessions/hands-on/' before executing this example.
 
