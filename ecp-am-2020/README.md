@@ -61,6 +61,7 @@ links:
     * [presentation](sessions/margo-thallium/margo-thallium-ECP2020.pdf)
 * Mochi core overview: SSG
     * [presentation](sessions/ssg/mochi-boot-camp-ssg-ECP2020.pdf)
+    * [hands-on exercise](sessions/hands-on/ssg/README.md)
 * Bake
     * [presentation](sessions/bake/mochi-boot-camp-bake-ECP2020.pdf)
     * [hands-on exercise](sessions/hands-on/bake/README.md)
